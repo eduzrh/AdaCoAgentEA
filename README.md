@@ -1,5 +1,5 @@
 # AdaCoAgentEA
-The source code for the ICDE 2025 paper under review: ***[Towards Unsupervised Entity Alignment for Highly Heterogeneous Knowledge Graphs]***.
+The source code for the ICDE 2025 paper under review: ***Towards Unsupervised Entity Alignment for Highly Heterogeneous Knowledge Graphs***.
 
 ## Dependencies
 
