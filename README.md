@@ -11,7 +11,7 @@ The source code for the ICDE 2025 paper under review: ***Towards Unsupervised En
 * python-Levenshtein
 
 ## Datasets
-The original datasets are obtained from [DBP15K dataset](https://github.com/nju-websoft/BootEA),  [GCN-Align](https://github.com/1049451037/GCN-Align) and [JAPE](https://github.com/nju-websoft/JAPE).
+The original datasets are obtained from [DBP15K dataset](https://github.com/nju-websoft/BootEA),  [GCN-Align](https://github.com/1049451037/GCN-Align), [Simple-HHEA](https://github.com/IDEA-FinAI/Simple-HHEA) and [BETA](https://github.com/DexterZeng/BETA).
 
 Take the dataset DBP15K (ZH-EN) as an example, the folder "zh_en" contains:
 * ent_ids_1: ids for entities in source KG (ZH);
