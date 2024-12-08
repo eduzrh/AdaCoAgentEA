@@ -1,9 +1,7 @@
+
 # AdaCoAgentEA
-<h4 align="center">
 
-🚀 Welcome to the repo of **Uni-MOE**!
-
-<h4>
+🚀 Welcome to the repo of **AdaCoAgentEA**!
 
 The source code for the ICDE 2025 paper under review: ***Towards Unsupervised Entity Alignment for Highly Heterogeneous Knowledge Graphs***.
 
