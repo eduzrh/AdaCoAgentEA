@@ -1,6 +1,9 @@
 
 # AdaCoAgentEA
 ![](https://img.shields.io/badge/version-1.0.0-blue)
+[![language-python3](https://img.shields.io/badge/Language-Python3-blue.svg?style=flat-square)](https://www.python.org/)
+[![made-with-Pytorch](https://img.shields.io/badge/Made%20with-pytorch-orange.svg?style=flat-square)](https://www.pytorch.org/)
+[![Contributions Welcome](https://img.shields.io/badge/Contributions-Welcome-brightgreen.svg?style=flat-square)](https://github.com/DexterZeng/EntMatcher/issues)
 
 🚀 Welcome to the repo of **AdaCoAgentEA**!
 
