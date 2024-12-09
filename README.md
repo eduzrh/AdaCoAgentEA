@@ -33,12 +33,17 @@ The source code for the ICDE 2025 paper under review: ***Towards Unsupervised En
 ## Datasets
 The original datasets are obtained from [DBP15K dataset](https://github.com/nju-websoft/BootEA),  [GCN-Align](https://github.com/1049451037/GCN-Align), [Simple-HHEA](https://github.com/IDEA-FinAI/Simple-HHEA) and [BETA](https://github.com/DexterZeng/BETA).
 
-Take the dataset DBP15K (ZH-EN) as an example, the folder "zh_en" contains:
-* ent_ids_1: ids for entities in source KG (ZH);
-* ent_ids_1_trans_goo: entities in source KG (ZH) with translated names;
-* ent_ids_2: ids for entities in target KG (EN);
-* ref_ent_ids: entity links for testing/validation;
-* sup_ent_ids: entity links for training;
-* triples_1: relation triples encoded by ids in source KG (ZH);
-* triples_2: relation triples encoded by ids in target KG (EN);
-* zh_vectorList.json: the input entity feature matrix initialized by word vectors;
+Take the dataset BETA as an example, the folder "data/BETA" contains:
+* ent_ids_1: ids for entities in source KG;
+* ent_ids_2: ids for entities in target KG;
+* triples_1: relation triples encoded by ids in source KG;
+* triples_2: relation triples encoded by ids in target KG;
+* rel_ids_1: relation ids in the source KG;
+* rel_ids_2: relation ids in the target KG;
+* time_id: time ids in the source KG and the target KG;
+* ref_ent_ids: all aligned entity pairs, list of pairs like (e_s \t e_t);
+* ref_pairs: entity links for testing/validation;
+* sup_pairs: entity links for training;
+
+
+## Running
