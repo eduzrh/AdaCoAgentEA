@@ -12,11 +12,23 @@ The source code for the ICDE 2025 paper under review: ***Towards Unsupervised En
 ## Dependencies
 
 * Python>=3.7 (tested on Python=3.8.10)
-* Tensorflow-gpu=2.x (tested on Tensorflow-gpu=2.6.0)
+* Pytorch
+* Transformers
 * Scipy
+* Pandas
+* Tqdm
+* Networkx
+* Gensim
+* SentencePiece
 * Numpy
 * Scikit-learn
 * python-Levenshtein
+
+
+
+
+
+
 
 ## Datasets
 The original datasets are obtained from [DBP15K dataset](https://github.com/nju-websoft/BootEA),  [GCN-Align](https://github.com/1049451037/GCN-Align), [Simple-HHEA](https://github.com/IDEA-FinAI/Simple-HHEA) and [BETA](https://github.com/DexterZeng/BETA).
