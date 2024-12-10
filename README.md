@@ -47,3 +47,6 @@ Take the dataset icews_wiki (HHEA) as an example, the folder "data/icews_wiki" c
 
 
 ## Running
+```bash
+python main.py --data DATASET
+```
