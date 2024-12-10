@@ -12,12 +12,12 @@ os.environ["OPENAI_API_KEY"] = "your key"
 openai.api_key = os.getenv("OPENAI_API_KEY")
 
 # Function to query GPT-3.5 model
-def LLM_query(prompt, model="gpt-3.5-turbo"):
+def LLM_query(prompt1, prompt2, model="gpt-3.5-turbo"):
     """Query LLM model and get response."""
     response = openai.ChatCompletion.create(
         model=model,
-        messages=[{"role": "system", "content": "You are a helpful assistant."},
-                  {"role": "user", "content": prompt}]
+        messages=[{"role": "system", "content": prompt1},
+                  {"role": "user", "content": prompt2}]
     )
     return response['choices'][0]['message']['content']
 
