@@ -58,3 +58,5 @@ Take the dataset icews_wiki (HHEA) as an example, the folder "data/icews_wiki" c
 python main.py --data DATASET
 ```
 `DATASET` can be `BETA`, `icews_wiki`, `icews_yago` or any dataset you place in the directory [data](./data).
+
+Note that the training set in the dataset is not used, i.e., no labelled data is used.
