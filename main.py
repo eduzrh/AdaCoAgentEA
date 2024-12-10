@@ -8,7 +8,7 @@ import openai
 # 脜盲脰脙 OpenAI API 脙脺脭驴
 # 脡猫脰脙 OpenAI API 禄霉卤戮碌脴脰路潞脥 API 脙脺脭驴
 os.environ["OPENAI_API_BASE"] = 'https://hk.xty.app/v1'
-os.environ["OPENAI_API_KEY"] = "sk-rVzRDfCUBDmAw6IADb20Db2b51214eE5Bc6eCfEc2246E88a"
+os.environ["OPENAI_API_KEY"] = "your-key"
 
 # 脰卤陆脫脢鹿脫脙 OpenAI API
 openai.api_key = os.getenv("OPENAI_API_KEY")
