@@ -9,7 +9,7 @@
 
 The source code for the ICDE 2025 paper under review: ***Towards Unsupervised Entity Alignment for Highly Heterogeneous Knowledge Graphs***.
 
-## Dependencies
+## Main Dependencies
 
 * Python>=3.7 (tested on Python=3.8.10)
 * Pytorch
@@ -17,21 +17,7 @@ The source code for the ICDE 2025 paper under review: ***Towards Unsupervised En
 * Scipy
 * Pandas
 * Tqdm
-* Networkx
-* Gensim
-* SentencePiece
 * Numpy
-* Scikit-learn
-* python-Levenshtein
-
-# Requirements
-* Create a virtual environment first via:
-```
-$ conda activate -n your_env_name python 3.8.10 pip
-```
-
-* Install all the required tools using the Dependencies
-
 
 
 
