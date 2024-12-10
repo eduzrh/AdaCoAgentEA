@@ -51,6 +51,7 @@ Take the dataset icews_wiki (HHEA) as an example, the folder "data/icews_wiki" c
 * ref_ent_ids: all aligned entity pairs, list of pairs like (e_s \t e_t);
 * ref_pairs: entity links for testing/validation;
 * sup_pairs: entity links for training;
+(Note that the training set in the dataset is not used, i.e., no labelled data is used.)
 
 
 ## Running
