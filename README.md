@@ -50,3 +50,4 @@ Take the dataset icews_wiki (HHEA) as an example, the folder "data/icews_wiki" c
 ```bash
 python main.py --data DATASET
 ```
+`DATASET` can be `icews_wiki`, `icews_yago` or any dataset you place in the directory [data](./data).
