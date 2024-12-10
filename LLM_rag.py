@@ -9,11 +9,11 @@ from tqdm import tqdm
 
 def load_ents(path):
     """
-    ¼ÓÔØÊµÌåÎÄ¼þ
-    ²ÎÊý:
-        path: ÊµÌåÎÄ¼þÂ·¾¶
-    ·µ»Ø:
-        data: ÊµÌå×Öµä
+    加载实体文件
+    参数:
+        path: 实体文件路径
+    返回:
+        data: 实体字典
     """
     data = {}
     with open(path, 'r') as f:
@@ -26,13 +26,13 @@ def load_ents(path):
 
 def retrieve_top_k_entities(query, retriever, k=10):
     """
-    Ê¹ÓÃ FAISS ¼ìË÷¸ø¶¨²éÑ¯µÄ TOP-K ÊµÌå
-    ²ÎÊý:
-        query: ²éÑ¯ÊµÌåÃû³Æ
-        retriever: ÓÃÓÚ¼ìË÷µÄÊµÀý
-        k: ·µ»ØµÄºòÑ¡ÊµÌåÊýÁ¿
-    ·µ»Ø:
-        top_k_answers: TOP-K ×îÏà¹ØµÄÊµÌå
+    使用 FAISS 检索最相关的 TOP-K 实体
+    参数:
+        query: 查询实体名称
+        retriever: 用于检索的对象
+        k: 返回的前 k 个实体的数量
+    返回:
+        top_k_answers: TOP-K 排序后的实体
     """
     answers = retriever.invoke(query)
     answers_all = {}
@@ -44,41 +44,42 @@ def retrieve_top_k_entities(query, retriever, k=10):
     return top_k_answers
 
 
-# ÅäÖÃ OpenAI API ÃÜÔ¿
-os.environ["OPENAI_API_BASE"] = 'https://hk.xty.app/v1'
-os.environ["OPENAI_API_KEY"] = "sk-rVzRDfCUBDmAw6IADb20Db2b51214eE5Bc6eCfEc2246E88a"
+# 配置 OpenAI API 基础设置
+os.environ["OPENAI_API_BASE"] = 'your base'
+os.environ["OPENAI_API_KEY"] = "your key"
 
-# ÎÄ¼þÂ·¾¶ÅäÖÃ
+# 文件路径配置
 retriever_document_path = "/home/dex/Desktop/HHTEA/Simple-HHEA-main/data/icews_wiki/inrag_ent_ids_2_pre_embeding.txt"
 faiss_index = "/home/dex/Desktop/HHTEA/Simple-HHEA-main/data/index/faiss_index_icews_wiki"
 retriever_output_file = "/home/dex/Desktop/HHTEA/Simple-HHEA-main/data/icews_wiki/retriever_outputs.txt"
 
-# ¼ÓÔØÊµÌå
+# 加载实体数据
 ents_1 = load_ents('/home/dex/Desktop/HHTEA/Simple-HHEA-main/data/icews_wiki/ent_ids_1')
 name2idx_1 = {v: k for k, v in ents_1.items()}
 ents_2 = load_ents('/home/dex/Desktop/HHTEA/Simple-HHEA-main/data/icews_wiki/ent_ids_2')
 name2idx_2 = {v: k for k, v in ents_2.items()}
 
-# ¼ÓÔØÎÄµµ
+# 加载文档
 loader = TextLoader(retriever_document_path)
 raw_documents = loader.load()
 
-# ³õÊ¼»¯ OpenAI Ç¶ÈëÄ£ÐÍ
+# 初始化 OpenAI 嵌入模型
 embeddings = OpenAIEmbeddings()
 
-# ¼ÓÔØ»ò´´½¨ FAISS ÏòÁ¿´æ´¢
+# 初始化并保存 FAISS 索引
 if not os.path.exists(faiss_index):
     text_splitter = CharacterTextSplitter(separator="\n", chunk_size=1, chunk_overlap=0)
     documents = text_splitter.split_documents(raw_documents)
     db = FAISS.from_documents(documents, embeddings)
     db.save_local(faiss_index)
 
-# ¼ÓÔØ FAISS ÏòÁ¿´æ´¢
+# 加载 FAISS 索引
 db = FAISS.load_local(faiss_index, embeddings, allow_dangerous_deserialization=True)
 retriever = db.as_retriever(search_type="similarity_score_threshold", search_kwargs={"score_threshold": 0.5})
 
-# Ö´ÐÐ²éÑ¯²¢±£´æ TOP-K ½á¹û
+# 处理查询并保存 TOP-K 结果
 outputs_pair = ""
+start_time = time.time()
 with open(retriever_output_file, 'w') as f, tqdm(total=len(ents_1.items()), desc="Processing queries") as pbar:
     for ent_id, ent_name in ents_1.items():
         query = ent_name
@@ -90,8 +91,8 @@ with open(retriever_output_file, 'w') as f, tqdm(total=len(ents_1.items()), desc
                 file.writelines(outputs_pair)
         except Exception as e:
             print(f"Error with entity {ent_name}: {str(e)}")
-        pbar.update(1)  # Update progress bar
+        pbar.update(1)  # 更新进度条
 
-# ¼ÆËãÖ´ÐÐÊ±¼ä
+# 输出执行时间
 end_time = time.time()
 print(f"Retriever Execution time: {end_time - start_time:.2f} seconds")
