@@ -27,7 +27,7 @@ The source code for the ICDE 2025 paper under review: ***Towards Unsupervised En
 # Requirements
 * Create a virtual environment first via:
 ```
-$ conda activate -n your_env_name python 3.8.5 pip
+$ conda activate -n your_env_name python 3.8.10 pip
 ```
 
 * Install all the required tools using the Dependencies
