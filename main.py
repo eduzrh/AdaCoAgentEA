@@ -1,8 +1,8 @@
 import os
 import time
 import argparse
-from modules import candidate_entity_retrieval, labeling_and_model_training, role_assignment_and_knowledge_enhancement
 from LLM_rag import load_ents, retrieve_top_k_entities, retriever  # Import functions from LLM_rag.py
+from modules import candidate_entity_retrieval, labeling_and_model_training, role_assignment_and_knowledge_enhancement
 import openai
 # OpenAI API configuration
 os.environ["OPENAI_API_BASE"] = 'your base'
