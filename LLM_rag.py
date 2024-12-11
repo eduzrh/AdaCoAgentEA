@@ -49,7 +49,7 @@ os.environ["OPENAI_API_BASE"] = 'your base'
 os.environ["OPENAI_API_KEY"] = "your key"
 
 # 文件路径配置
-retriever_document_path = "/home/dex/Desktop/HHTEA/Simple-HHEA-main/data/icews_wiki/inrag_ent_ids_2_pre_embeding.txt"
+retriever_document_path = "/home/dex/Desktop/HHTEA/Simple-HHEA-main/data/icews_wiki/inrag_ent_ids_2_subKG.txt"
 faiss_index = "/home/dex/Desktop/HHTEA/Simple-HHEA-main/data/index/faiss_index_icews_wiki"
 retriever_output_file = "/home/dex/Desktop/HHTEA/Simple-HHEA-main/data/icews_wiki/retriever_outputs.txt"
 
