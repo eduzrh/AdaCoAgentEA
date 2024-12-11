@@ -39,6 +39,8 @@ Take the dataset icews_wiki (HHEA) as an example, the folder "data/icews_wiki" c
 
 
 ## Running
+The `retriever_document_path` refers to the `ent_ids_2` file where the ids have been removed, leaving only the names.
+
 ```bash
 python main.py --data DATASET
 ```
