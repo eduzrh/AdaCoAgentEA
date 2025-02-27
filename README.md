@@ -43,7 +43,7 @@ pip install 'Main Dependencies'
 
 
 ## ✨ Datasets
-The original datasets are obtained from [DBP15K dataset](https://github.com/nju-websoft/BootEA),  [GCN-Align](https://github.com/1049451037/GCN-Align), [Simple-HHEA](https://github.com/IDEA-FinAI/Simple-HHEA) and [BETA](https://github.com/DexterZeng/BETA).
+The original datasets are obtained from DBP15K dataset,  [GCN-Align](https://github.com/1049451037/GCN-Align), [Simple-HHEA](https://github.com/IDEA-FinAI/Simple-HHEA) and [BETA](https://github.com/DexterZeng/BETA).
 
 Take the dataset icews_wiki (HHEA) as an example, the folder "data/icews_wiki" contains:
 * ent_ids_1: ids for entities in source KG;
