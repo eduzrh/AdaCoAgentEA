@@ -197,14 +197,10 @@ We will respond to all questions within 2-3 business days.
 - [NetworkX: Network Analysis in Python](https://github.com/networkx/networkx).  
   NetworkX Developers.  
   GitHub Repository.  
-
+- **[Faiss: A Library for Efficient Similarity Search and Clustering of Dense Vectors](https://github.com/facebookresearch/faiss).**  
+  **Facebook Research.**  
+  **GitHub Repository.**  
 ---
-
-### Formatting Notes:
-1. **Authors**: Full names separated by commas, with "and" before the last author.
-2. **Titles**: Paper titles in bold or italic (not shown here due to Markdown limitations).
-3. **Conference/Journal**: Abbreviated conference names (e.g., WWW, ACL) followed by year.
-4. **Links**: DOI or official URLs prioritized. For GitHub repos, direct links are included.
 
 
 ## Happy Coding 🌞️
