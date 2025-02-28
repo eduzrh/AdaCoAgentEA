@@ -198,7 +198,7 @@ If you encounter errors:
 We will respond to all questions within 2-3 business days.
 
 ## 📜 License
-[Apache License 3.0](LICENSE)
+[GPL-3.0](LICENSE)
 
 ## 🔗 References
 - [Unsupervised Entity Alignment for Temporal Knowledge Graphs](https://doi.org/10.1145/3543507.3583381).  
