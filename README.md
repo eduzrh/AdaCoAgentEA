@@ -38,7 +38,7 @@ To bridge the gap, **AdaCoAgentEA** proposes the first unsupervised solution for
 - **Resource-Efficient**: Reduces time and token costs by **up to 94.5%** compared to baseline methods  
 - **Plug-and-Play Architecture**: Enables rapid replacement of LLM/small-model agents with minimal code adjustments  
 
-📈 Validated through extensive experiments, AdaCoAgentEA establishes new state-of-the-art performance in both **unsupervised HHEA** and **classic EA tasks**, offering a practical paradigm for industrial applications with HHKGs. 
+📈 Validated through extensive experiments, AdaCoAgentEA establishes new state-of-the-art performance in both **unsupervised HHEA** and **classic EA tasks**, offering a practical paradigm for applications with HHKGs. 
 
 ## 🏗 Architecture
 
