@@ -194,12 +194,13 @@ def llm_rag_all(data_dir, ablation_config = None):
     Constraint: if there is a match, return only TOP-K IDs of the matching candidate entity number.
     '''
     config_top_k = 5
-    if ablation_config[0] == 'ablation2' and ablation_config[1] != 'LLM1_S1':
-        config_top_k = 1
-    if ablation_config[0] == 'ablation3' and ablation_config[1] == 'no_LLM1':
-        config_top_k = 1
-    if ablation_config[0] == 'ablation5' and ablation_config[1] == 'LLM_Agents':
-        config_top_k = 1
+    if ablation_config:
+        if ablation_config[0] == 'ablation2' and ablation_config[1] != 'LLM1_S1':
+            config_top_k = 1
+        if ablation_config[0] == 'ablation3' and ablation_config[1] == 'no_LLM1':
+            config_top_k = 1
+        if ablation_config[0] == 'ablation5' and ablation_config[1] == 'LLM_Agents':
+            config_top_k = 1
 
 
 
