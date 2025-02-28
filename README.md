@@ -14,7 +14,7 @@ The source code for the ICDE 2025 paper under review: ***Towards Unsupervised En
 ## 🏠 Overview  
 **Highly Heterogeneous Entity Alignment (HHEA)** represents a realistic yet challenging scenario of Entity Alignment (EA), aiming to align equivalent entities between **Highly Heterogeneous Knowledge Graphs (HHKGs)** with significant differences in structure, scale, and overlap. In practice, the scarcity of labeled data necessitates research into **unsupervised HHEA**, which faces critical challenges:  
 - Difficulty in capturing structural/semantic associations between HHKGs  
-- Absence of explicit alignment paradigms  
+- Absence of explicit alignment paradigms for HHEA  
 - High computational and time costs  
 
 To bridge the gap, **AdaCoAgentEA** proposes the first unsupervised solution for HHEA through **multi-agent collaboration**:  
@@ -23,20 +23,20 @@ To bridge the gap, **AdaCoAgentEA** proposes the first unsupervised solution for
 1. **Pioneering Unsupervised HHEA Research**  
    - First formal analysis and solution for unsupervised HHEA, establishing foundational methodologies for this emerging field.  
 
-2. **Multi-Agent Adaptive Framework**  
-   - Novel collaboration architecture with **3 functional areas** combining LLMs and lightweight models  
+2. **Novel and Effective Unsupervised HHEA Framework： Multi-Agent Adaptive Framework**  
+   - Novel collaboration architecture with **3 functional areas** combining LLMs and small models  
    - Eliminates labeled data dependency while capturing cross-HHKG structural/semantic correlations  
 
-3. **Meta-Alignment & Communication Toolkit**  
+3. **Unsupervised HHEA Optimization Techniques： Meta-Alignment & Communication Protocols**  
    - *Meta-expert role-playing*: Enhances background knowledge specialization  
-   - *Multi-granularity logic rules*: Abstracts complex HHEA scenarios into executable paradigms  
-   - *Efficient protocols*: Improve agent interaction efficiency by 25-40%, reducing computational overhead  
+   - *Multi-granularity meta-logic symbol rules*: Abstracts complex HHEA scenarios into executable paradigms  
+   - *Efficient protocols*: Improve agent interaction efficiency, reducing computational overhead  
 
 ### ⚡ Key Advantages  
-- **Breakthrough Performance**: Achieves **62.3% relative Hits@1 gains** across 5 benchmarks, surpassing supervised SOTA models (85%+ accuracy on DBP15k)  
+- **Breakthrough Performance**: Achieves **62.3% relative Hits@1 gains** across 5 benchmarks, surpassing supervised SOTA models (98%+ Hits@1 on ICEWS-WIKI)  
 - **Task-Generalized Design**: Validated on both HHEA and classic EA tasks with consistent superiority  
-- **Resource-Efficient**: Reduces time/computational costs by 30-45% compared to baseline methods  
-- **Scalable Architecture**: Maintains stable performance when scaling to HHKGs with 1M+ entities  
+- **Resource-Efficient**: Reduces time and token costs by **up to 94.5%** compared to baseline methods  
+- **Plug-and-Play Architecture**: Enables rapid replacement of LLM/small-model agents with <5% code changes  
 
 📈 Validated through extensive experiments, AdaCoAgentEA establishes new state-of-the-art performance in both **unsupervised HHEA** and **classic EA tasks**, offering a practical paradigm for industrial applications with HHKGs. 
 
