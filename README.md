@@ -42,6 +42,8 @@ To bridge the gap, **AdaCoAgentEA** proposes the first unsupervised solution for
 
 ## 🏗 Architecture
 
+(The complete architectural diagrams and interaction details are presented in Section III of the paper (currently under peer review). The schematic illustrations will be promptly updated upon manuscript acceptance.)
+
 ## 📺 Demo Video
 
 ## 🔨  Main Dependencies
