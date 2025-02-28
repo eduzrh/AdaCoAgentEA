@@ -40,6 +40,8 @@ To bridge the gap, **AdaCoAgentEA** proposes the first unsupervised solution for
 
 📈 Validated through extensive experiments, AdaCoAgentEA establishes new state-of-the-art performance in both **unsupervised HHEA** and **classic EA tasks**, offering a practical paradigm for industrial applications with HHKGs. 
 
+## 🏗 Architecture
+
 
 
 ## 🔨  Main Dependencies
@@ -52,7 +54,7 @@ To bridge the gap, **AdaCoAgentEA** proposes the first unsupervised solution for
 * Tqdm
 * Numpy
 
-## 🐎 Demo Video
+## 📺 Demo Video
 
 
 ## 📦 Installation
@@ -65,7 +67,7 @@ conda activate AdaCoAgentEA
 ```
 2. Install the dependencies
 ```bash
-pip install 'Main Dependencies'
+pip install `Main Dependencies'
 ```
 
 
@@ -84,7 +86,7 @@ Take the dataset icews_wiki (HHEA) as an example, the folder "data/icews_wiki" c
 
 
 
-## 🔥 Running
+## 🔥 One-Click Launch
 
 1. Clone the repository
 ```bash
@@ -192,6 +194,9 @@ If you encounter errors:
 - 📝 **GitHub Issues:** For more technical inquiries, you can also create a new issue in our [GitHub repository](https://github.com/eduzrh/AdaCoAgentEA/issues).
 
 We will respond to all questions within 2-3 business days.
+
+## 📜 License
+[Apache License 2.0](LICENSE)
 
 ## 🔗 References
 - [Unsupervised Entity Alignment for Temporal Knowledge Graphs](https://doi.org/10.1145/3543507.3583381).  
