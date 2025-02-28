@@ -12,9 +12,30 @@ English | [简体中文](./README_zh_CN.md)
 The source code for the ICDE 2025 paper under review: ***Towards Unsupervised Entity Alignment for Highly Heterogeneous Knowledge Graphs***.
 
 ## 🏠 Overview  
-**AdaCoAgentEA** is a novel unsupervised framework for Highly Heterogeneous Entity Alignment (HHEA) between knowledge graphs (KGs) with significant structural, semantic, and scale differences. Addressing the challenges of scarce labeled data and complex heterogeneity, this framework leverages **multi-agent collaboration** between large language models (LLMs) and lightweight models to autonomously capture cross-KG structural and semantic associations.  
+**Highly Heterogeneous Entity Alignment (HHEA)** represents a realistic yet challenging scenario of Entity Alignment (EA), aiming to align equivalent entities between **Highly Heterogeneous Knowledge Graphs (HHKGs)** with significant differences in structure, scale, and overlap. In practice, the scarcity of labeled data necessitates research into **unsupervised HHEA**, which faces critical challenges:  
+- Difficulty in capturing structural/semantic associations between HHKGs  
+- Absence of explicit alignment paradigms  
+- High computational and time costs  
 
-Designed for real-world scenarios, AdaCoAgentEA bridges the gap in unsupervised HHEA research while offering high practical applicability.
+To bridge the gap, **AdaCoAgentEA** proposes the first unsupervised solution for HHEA through **multi-agent collaboration**:  
+
+✨ **Core Innovations**  
+1. **Adaptive Collaboration Framework**  
+   - Combines multi-agent LLMs and lightweight models in three functional areas  
+   - Eliminates dependency on labeled data while capturing cross-KG correlations  
+
+2. **Optimization Toolkit**  
+   - *Meta-alignment mechanisms*: Enable effective HHKG associations  
+   - *Communication protocols*: Provide explicit alignment paradigms  
+   - Reduces time/computational costs by 30-45% compared to baseline methods  
+
+⚡ **Key Advantages**  
+- Achieves **62.3% relative Hits@1 improvement** on five benchmark datasets  
+- Rivals fully supervised models  
+- Maintains high efficiency and scalability for real-world deployment  
+
+📈 Validated through extensive experiments, AdaCoAgentEA establishes new state-of-the-art performance in both **unsupervised HHEA** and **classic EA tasks**, offering a practical paradigm for industrial applications with HHKGs. 
+
 
 
 ## 🔨  Main Dependencies
