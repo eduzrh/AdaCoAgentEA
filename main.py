@@ -4,14 +4,14 @@ import sys
 import re
 import argparse
 from modules import candidate_entity_retrieval, labeling_and_model_training, role_assignment_and_knowledge_enhancement, calculate_abs_hits_at_1, run_full_process_llm2, run_full_process_s4
-from modules1.LLM_rag import load_ents, retrieve_top_k_entities, setup_retriever, llm_rag_all
-from modules1.cal_degree_important import s2_degree_and_s3_important
-from modules2.LLM1_label_selector import align_entities
-from modules3.LLM3_instruction_generator import run_full_process_llm3
-from modules3.LLM4_5_expert_system import run_full_process_llm4_5
+from Area1.LLM_rag import load_ents, retrieve_top_k_entities, setup_retriever, llm_rag_all
+from Area1.cal_degree_important import s2_degree_and_s3_important
+from Area2.LLM1_label_selector import align_entities
+from Area3.LLM3_instruction_generator import run_full_process_llm3
+from Area3.LLM4_5_expert_system import run_full_process_llm4_5
 import openai
 import tokens_cal
-from modules1.struc_sim import load_triples, load_ref_ent_ids, structure_similarity
+from Area1.struc_sim import load_triples, load_ref_ent_ids, structure_similarity
 import shutil
 from collections import defaultdict
 

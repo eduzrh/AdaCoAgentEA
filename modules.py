@@ -6,11 +6,11 @@ import subprocess
 
 
 from collections import defaultdict
-from modules1.cal_degree_important import s2_degree_and_s3_important
-from modules2.LLM1_label_selector import align_entities
-from modules2.LLM2_rule_generator import run_full_process_llm2
-from modules3.LLM3_instruction_generator import run_full_process_llm3
-from modules3.LLM4_5_expert_system import run_full_process_llm4_5
+from Area1.cal_degree_important import s2_degree_and_s3_important
+from Area2.LLM1_label_selector import align_entities
+from Area2.LLM2_rule_generator import run_full_process_llm2
+from Area3.LLM3_instruction_generator import run_full_process_llm3
+from Area3.LLM4_5_expert_system import run_full_process_llm4_5
 
 
 
