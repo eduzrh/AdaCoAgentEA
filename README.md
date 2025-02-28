@@ -1,6 +1,5 @@
 
-# ![image](https://github.com/user-attachments/assets/134b3d6b-d486-4d34-8c48-87dcacca4b66)
-AdaCoAgentEA
+# AdaCoAgentEA
 ![](https://img.shields.io/badge/version-0.0.2-blue)
 [![language-python3](https://img.shields.io/badge/Language-Python3-blue.svg?style=flat-square)](https://www.python.org/)
 [![made-with-Pytorch](https://img.shields.io/badge/Made%20with-pytorch-orange.svg?style=flat-square)](https://www.pytorch.org/)
