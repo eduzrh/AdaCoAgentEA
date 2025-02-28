@@ -33,10 +33,10 @@ To bridge the gap, **AdaCoAgentEA** proposes the first unsupervised solution for
    - *Efficient protocols*: Improve agent interaction efficiency, reducing computational overhead  
 
 ### ⚡ Key Advantages  
-- **Breakthrough Performance**: Achieves **62.3% relative Hits@1 gains** across 5 benchmarks, surpassing supervised SOTA models (98%+ Hits@1 on ICEWS-WIKI)  
+- **Breakthrough Performance**: Achieves **up to 62.3% relative Hits@1 gains** across 5 benchmarks, surpassing supervised SOTA models (98%+ Hits@1 on ICEWS-WIKI)  
 - **Task-Generalized Design**: Validated on both HHEA and classic EA tasks with consistent superiority  
 - **Resource-Efficient**: Reduces time and token costs by **up to 94.5%** compared to baseline methods  
-- **Plug-and-Play Architecture**: Enables rapid replacement of LLM/small-model agents with <5% code changes  
+- **Plug-and-Play Architecture**: Enables rapid replacement of LLM/small-model agents with minimal code adjustments  
 
 📈 Validated through extensive experiments, AdaCoAgentEA establishes new state-of-the-art performance in both **unsupervised HHEA** and **classic EA tasks**, offering a practical paradigm for industrial applications with HHKGs. 
 
