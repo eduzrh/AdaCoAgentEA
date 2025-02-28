@@ -42,7 +42,7 @@ To bridge the gap, **AdaCoAgentEA** proposes the first unsupervised solution for
 
 ## 🏗 Architecture
 
-
+## 📺 Demo Video
 
 ## 🔨  Main Dependencies
 
@@ -54,7 +54,7 @@ To bridge the gap, **AdaCoAgentEA** proposes the first unsupervised solution for
 * Tqdm
 * Numpy
 
-## 📺 Demo Video
+
 
 
 ## 📦 Installation
