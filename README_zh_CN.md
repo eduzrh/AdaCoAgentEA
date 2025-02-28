@@ -196,8 +196,8 @@ python main.py --data icews_wiki --ablation3 no_LLM3
 - [NetworkX: Network Analysis in Python](https://github.com/networkx/networkx).  
   NetworkX Developers.  
   GitHub Repository.  
-- [Faiss: A Library for Efficient Similarity Search and Clustering of Dense Vectors](https://github.com/facebookresearch/faiss).
-  Facebook Research.
+- [Faiss: A Library for Efficient Similarity Search and Clustering of Dense Vectors](https://github.com/facebookresearch/faiss).  
+  Facebook Research.  
   GitHub Repository.  
 ---
 
