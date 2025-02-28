@@ -188,7 +188,7 @@ If you encounter errors:
 
 📢 If you have any questions or feedback about this project, please feel free to contact us. We highly appreciate your suggestions!
 
-- **Email:** runhaozhao@nudt.edu.cn
+- 📧 **Email:** runhaozhao@nudt.edu.cn
 - 📝 **GitHub Issues:** For more technical inquiries, you can also create a new issue in our [GitHub repository](https://github.com/eduzrh/AdaCoAgentEA/issues).
 
 We will respond to all questions within 2-3 business days.
