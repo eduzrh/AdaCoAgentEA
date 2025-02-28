@@ -14,11 +14,6 @@ The source code for the ICDE 2025 paper under review: ***Towards Unsupervised En
 ## 🏠 Overview  
 **AdaCoAgentEA** is a novel unsupervised framework for Highly Heterogeneous Entity Alignment (HHEA) between knowledge graphs (KGs) with significant structural, semantic, and scale differences. Addressing the challenges of scarce labeled data and complex heterogeneity, this framework leverages **multi-agent collaboration** between large language models (LLMs) and lightweight models to autonomously capture cross-KG structural and semantic associations.  
 
-Key innovations include:  
-- **Adaptive Collaboration**: A three-functional agent framework eliminating reliance on labeled data.  
-- **Meta-Alignment & Protocols**: Optimization tools for explicit alignment paradigms and reduced computational costs.  
-- **Efficiency & Scalability**: Achieves state-of-the-art performance on HHEA and classic EA tasks (up to **62.3% Hits@1 improvement**), rivaling supervised models with minimal resource overhead.  
-
 Designed for real-world scenarios, AdaCoAgentEA bridges the gap in unsupervised HHEA research while offering high practical applicability.
 
 
