@@ -65,17 +65,17 @@ def s2_degree_and_s3_important(data_dir, is_activation_m1 = True, ablation_confi
         G1, degrees1 = load_kg_and_build_graph(os.path.join(data_dir, 'triples_1'))
         G2, degrees2 = load_kg_and_build_graph(os.path.join(data_dir, 'triples_2'))
 
-        # print("\nCalculating PageRank...")
-        # pr1 = nx.pagerank(G1)
-        # pr2 = nx.pagerank(G2)
+        print("\nCalculating PageRank...")
+        pr1 = nx.pagerank(G1)
+        pr2 = nx.pagerank(G2)
 
         # print("\nCalculating Betweenness Centrality...")
         # pr1 = nx.betweenness_centrality(G1)
         # pr2 = nx.betweenness_centrality(G2)
 
-        print("\nCalculating Closeness Centrality...")
-        pr1 = nx.closeness_centrality(G1)
-        pr2 = nx.closeness_centrality(G2)
+        # print("\nCalculating Closeness Centrality...")
+        # pr1 = nx.closeness_centrality(G1)
+        # pr2 = nx.closeness_centrality(G2)
 
         # print("\nCalculating eigenvector_centrality...")
         # pr1 = nx.eigenvector_centrality(G1, max_iter=1000)
