@@ -198,7 +198,7 @@ We will respond to all questions within 2-3 business days.
   NetworkX Developers.  
   GitHub Repository.  
 - [Faiss: A Library for Efficient Similarity Search and Clustering of Dense Vectors](https://github.com/facebookresearch/faiss).  
-  Facebook Research.
+  Facebook Research.  
   GitHub Repository.  
 ---
 
