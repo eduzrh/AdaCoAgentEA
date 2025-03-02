@@ -46,10 +46,10 @@ To bridge the gap, **AdaCoAgentEA** proposes the first unsupervised solution for
 
 ## 📺 Demo Video
 [Official Demo Video1](https://pan.baidu.com/s/12RSVKPTBCdaNXJrI2mLxWA?pwd=64rk)  
-(Baidu, 720p, Extraction Code: 64rk) 
+(Baidu Netdisk, 720p, Extraction Code: 64rk) 
 
 [Official Demo Video2](https://1drv.ms/v/c/50d754725eca3864/EV0evOeQWI5It2oEfqZPKx0Bw70in8Z4_h7uvB30FDOmfg)  
-
+(OneDrive)
 
 ## 🔨  Main Dependencies
 
