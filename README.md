@@ -237,9 +237,8 @@ We will respond to all questions within 2-3 business days.
 
 
 > **Acknowledgement**  
-> This work is built upon the following open-source projects. We sincerely appreciate their contributions:  
-> - Entity Alignment: [Dual-AMN](https://github.com/MaoXinn/Dual-AMN), [JAPE](https://github.com/nju-websoft/JAPE), [GCN-Align](https://github.com/1049451037/GCN-Align), [Simple-HHEA](https://github.com/IDEA-FinAI/Simple-HHEA), [BETA](https://github.com/DexterZeng/BETA)  
-> - Infrastructure: [Faiss](https://github.com/facebookresearch/faiss), [NetworkX](https://github.com/networkx/networkx)
+> The following open source projects were partially referenced in this work. We sincerely appreciate their contributions:  
+> [Dual-AMN](https://github.com/MaoXinn/Dual-AMN), [JAPE](https://github.com/nju-websoft/JAPE), [GCN-Align](https://github.com/1049451037/GCN-Align), [Simple-HHEA](https://github.com/IDEA-FinAI/Simple-HHEA), [BETA](https://github.com/DexterZeng/BETA), [Faiss](https://github.com/facebookresearch/faiss), [NetworkX](https://github.com/networkx/networkx)
 
 
 ---
