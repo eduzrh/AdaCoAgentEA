@@ -4,7 +4,7 @@
 [![made-with-Pytorch](https://img.shields.io/badge/Made%20with-pytorch-orange.svg?style=flat-square)](https://www.pytorch.org/)
 [![Contributions Welcome](https://img.shields.io/badge/Contributions-Welcome-brightgreen.svg?style=flat-square)](https://github.com/DexterZeng/EntMatcher/issues)
 
-简体中文 | [English](../README.md)
+简体中文 | [English](./README.md)
 
 🚀 欢迎来到 **AdaCoAgentEA** 代码仓库！🎉🎉🎉
 
