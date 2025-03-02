@@ -44,6 +44,11 @@
 （完整架构图与交互细节详见论文第三节（当前处于同行评审阶段）。示意图将在论文录用后及时更新。）
 
 ## 📺 演示视频
+[Official Demo Video1](https://pan.baidu.com/s/12RSVKPTBCdaNXJrI2mLxWA?pwd=64rk)  
+(百度网盘, 720p, 提取码: 64rk) 
+
+[Official Demo Video2](https://1drv.ms/v/c/50d754725eca3864/Ea89lcdneO1BuMYsdKQRmeEByl39-CGygkiQ9UQiMP-gCg)  
+(OneDrive)
 
 ## 🔨 主要依赖
 
