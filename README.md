@@ -45,6 +45,8 @@ To bridge the gap, **AdaCoAgentEA** proposes the first unsupervised solution for
 (The complete architectural diagrams and interaction details are presented in Section III of the paper (currently under peer review). The schematic illustrations will be promptly updated upon manuscript acceptance.)
 
 ## 📺 Demo Video
+[Official Demo Video](https://pan.baidu.com/s/12RSVKPTBCdaNXJrI2mLxWA?pwd=64rk)(Extraction Code: 64rk) 
+
 
 ## 🔨  Main Dependencies
 
