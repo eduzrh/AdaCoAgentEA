@@ -45,11 +45,11 @@ To bridge the gap, **AdaCoAgentEA** proposes the first unsupervised solution for
 (The complete architectural diagrams and interaction details are presented in Section III of the paper (currently under peer review). The schematic illustrations will be promptly updated upon manuscript acceptance.)
 
 ## 📺 Demo Video
-Baidu Netdisk: [Official Demo Video1](https://pan.baidu.com/s/12RSVKPTBCdaNXJrI2mLxWA?pwd=64rk)  
-(720p, Extraction Code: 64rk) 
+[Official Demo Video1](https://pan.baidu.com/s/12RSVKPTBCdaNXJrI2mLxWA?pwd=64rk)  
+(Baidu Netdisk, 720p, Extraction Code: 64rk) 
 
-OneDrive: [Official Demo Video2](https://1drv.ms/v/c/50d754725eca3864/EV0evOeQWI5It2oEfqZPKx0Bw70in8Z4_h7uvB30FDOmfg)  
-
+[Official Demo Video2](https://1drv.ms/v/c/50d754725eca3864/Ea89lcdneO1BuMYsdKQRmeEByl39-CGygkiQ9UQiMP-gCg)  
+(OneDrive)
 
 ## 🔨  Main Dependencies
 
