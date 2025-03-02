@@ -234,12 +234,14 @@ We will respond to all questions within 2-3 business days.
 - [Faiss: A Library for Efficient Similarity Search and Clustering of Dense Vectors](https://github.com/facebookresearch/faiss).  
   Facebook Research.  
   GitHub Repository.  
----
+
 
 > **Acknowledgement**  
 > This work is built upon the following open-source projects. We sincerely appreciate their contributions:  
 > - Entity Alignment: [Dual-AMN](https://github.com/MaoXinn/Dual-AMN), [JAPE](https://github.com/nju-websoft/JAPE), [GCN-Align](https://github.com/1049451037/GCN-Align), [Simple-HHEA](https://github.com/IDEA-FinAI/Simple-HHEA), [BETA](https://github.com/DexterZeng/BETA)  
 > - Infrastructure: [Faiss](https://github.com/facebookresearch/faiss), [NetworkX](https://github.com/networkx/networkx)
 
+
+---
 
 ## Happy Coding 🌞️
