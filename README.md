@@ -42,7 +42,7 @@ To bridge the gap, **AdaCoAgentEA** proposes the first unsupervised solution for
 
 ## 🏗 Architecture
 
-(The complete architectural diagrams and interaction details are presented in Section III of the paper (currently under peer review). The schematic illustrations will be promptly updated upon manuscript acceptance.)
+(The complete architectural diagrams and interaction details are presented in Section III of the paper.)
 
 ## 📺 Demo Video
 [Official Demo Video1](https://pan.baidu.com/s/12RSVKPTBCdaNXJrI2mLxWA?pwd=64rk)  
