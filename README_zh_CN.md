@@ -41,7 +41,7 @@
 
 ## 🏗 系统架构
 
-（完整架构图与交互细节详见论文第三节（当前处于同行评审阶段）。示意图将在论文录用后及时更新。）
+（完整架构图与交互细节详见论文第三节。）
 
 ## 📺 演示视频
 [Official Demo Video1](https://pan.baidu.com/s/12RSVKPTBCdaNXJrI2mLxWA?pwd=64rk)  
