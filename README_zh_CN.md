@@ -8,7 +8,7 @@
 
 🚀 欢迎来到 **AdaCoAgentEA** 代码仓库！🎉🎉🎉
 
-本代码库对应尚在ICDE 2025审稿阶段的论文：***Towards Unsupervised Entity Alignment for Highly Heterogeneous Knowledge Graphs***。
+本代码库对应在ICDE 2025的论文：***Towards Unsupervised Entity Alignment for Highly Heterogeneous Knowledge Graphs***。
 
 ## 🏠 项目概览  
 **高度异构实体对齐（HHEA）** 是实体对齐（EA）领域中一个现实且具有挑战性的场景，旨在对齐具有显著结构差异、规模差异和重叠差异的**高度异构知识图谱（HHKG）**中的等价实体。在实际应用中，标注数据的稀缺性使得**无监督HHEA**研究面临以下关键挑战：  
