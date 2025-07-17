@@ -9,7 +9,7 @@ English | [简体中文](./README_zh_CN.md)
 
 🚀 Welcome to the repo of **AdaCoAgentEA**! 🎉🎉🎉
 
-The source code for the ICDE 2025 paper under review: ***Towards Unsupervised Entity Alignment for Highly Heterogeneous Knowledge Graphs***.
+The source code for the ICDE 2025 paper: ***Towards Unsupervised Entity Alignment for Highly Heterogeneous Knowledge Graphs***.
 
 ## 🏠 Overview  
 **Highly Heterogeneous Entity Alignment (HHEA)** represents a realistic yet challenging scenario of Entity Alignment (EA), aiming to align equivalent entities between **Highly Heterogeneous Knowledge Graphs (HHKGs)** with significant differences in structure, scale, and overlap. In practice, the scarcity of labeled data necessitates research into **unsupervised HHEA**, which faces critical challenges:  
