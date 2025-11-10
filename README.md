@@ -1,264 +1,251 @@
-# MTKGA-Wild
 
-![Version 1.0.0](https://img.shields.io/badge/version-1.0.0-blue)
-[![Language: Python 3](https://img.shields.io/badge/Language-Python3-blue.svg?style=flat-square)](https://www.python.org/)
-[![Made with PyTorch](https://img.shields.io/badge/Made%20with-pytorch-orange.svg?style=flat-square)](https://www.pytorch.org/)
-[![Contributions Welcome](https://img.shields.io/badge/Contributions-Welcome-brightgreen.svg?style=flat-square)](https://github.com/eduzrh/MTKGA-Wild/issues)
+# AdaCoAgentEA
+![](https://img.shields.io/badge/version-0.0.2-blue)
+[![language-python3](https://img.shields.io/badge/Language-Python3-blue.svg?style=flat-square)](https://www.python.org/)
+[![made-with-Pytorch](https://img.shields.io/badge/Made%20with-pytorch-orange.svg?style=flat-square)](https://www.pytorch.org/)
+[![Contributions Welcome](https://img.shields.io/badge/Contributions-Welcome-brightgreen.svg?style=flat-square)](https://github.com/DexterZeng/EntMatcher/issues)
 
-[English](README.md) | [简体中文](./README_zh_CN.md)
+English | [简体中文](./README_zh_CN.md)
 
-🚀 **Welcome to the MTKGA-Wild Repository!** 🎉🎉🎉
+🚀 Welcome to the repo of **AdaCoAgentEA**! 🎉🎉🎉
 
-This repository contains the source code for the ICDE 2026 submission: ***Taming the Wild Evolution: Aligning Multi-Modal Temporal Knowledge Graphs***.
+The source code for the ICDE 2025 paper: ***Towards Unsupervised Entity Alignment for Highly Heterogeneous Knowledge Graphs***.
 
----
+## 🏠 Overview  
+**Highly Heterogeneous Entity Alignment (HHEA)** represents a realistic yet challenging scenario of Entity Alignment (EA), aiming to align equivalent entities between **Highly Heterogeneous Knowledge Graphs (HHKGs)** with significant differences in structure, scale, and overlap. In practice, the scarcity of labeled data necessitates research into **unsupervised HHEA**, which faces critical challenges:  
+- Difficulty in capturing structural/semantic associations between HHKGs  
+- Absence of explicit alignment paradigms for HHEA  
+- High computational and time costs  
 
-## 🏠 **Overview** 🔍
+To bridge the gap, **AdaCoAgentEA** proposes the first unsupervised solution for HHEA through **multi-agent collaboration**:  
 
-**Multi-Modal Temporal Knowledge Graph Alignment in the Wild (MTKGA-Wild)** represents a **new and important research task** that addresses a critical challenge in **knowledge graph integration**.💡
+### ✨ Core Innovations  
+1. **Pioneering Unsupervised HHEA Research**  
+   - First formal analysis and solution for unsupervised HHEA, establishing foundational methodologies for this emerging field.  
 
-### ✨ **Key Innovations** 🌟
+2. **Novel and Effective Unsupervised HHEA Framework： Multi-Agent Adaptive Framework**  
+   - Novel collaboration architecture with **3 functional areas** combining LLMs and small models  
+   - Eliminates labeled data dependency while capturing cross-HHKG structural/semantic correlations  
 
-#### 1. **New and Important Research Task** 📋
+3. **Unsupervised HHEA Optimization Techniques： Meta-Alignment & Communication Protocols**  
+   - *Meta-expert role-playing*: Enhances background knowledge specialization  
+   - *Multi-granularity meta-logic symbol rules*: Abstracts complex HHEA scenarios into executable paradigms  
+   - *Efficient protocols*: Improve agent interaction efficiency, reducing computational overhead  
 
-To the best of our knowledge, this is the **first work** to systematically explore the integration of MTKGs involving dynamically evolving multi-modal information such as images, text, audio, and video. We formally formulate this problem as **MTKGA-Wild**.
+### ⚡ Key Advantages  
+- **Breakthrough Performance**: Achieves **up to 62.3% relative Hits@1 gains** across 5 benchmarks, surpassing supervised SOTA models (98%+ Hits@1 on ICEWS-WIKI)  
+- **Task-Generalized Design**: Validated on both HHEA and classic EA tasks with consistent superiority  
+- **Resource-Efficient**: Reduces time and token costs by **up to 94.5%** compared to baseline methods  
+- **Plug-and-Play Architecture**: Enables rapid replacement of LLM/small-model agents with minimal code adjustments  
 
-#### 2. **EvoWildAlign Framework** 🔗
+📈 Validated through extensive experiments, AdaCoAgentEA establishes new state-of-the-art performance in both **unsupervised HHEA** and **classic EA tasks**, offering a practical paradigm for applications with HHKGs. 
 
-A novel **neuro-symbolic evolutionary agentic hypergraph collaboration framework**, encompassing two core stages:
+## 🏗 Architecture
 
-**Stage 1: Neuro-Symbolic Evolution Hypergraph Representation** 🕵️‍♂️
+(The complete architectural diagrams and interaction details are presented in Section III of the paper.)
 
-Adaptively decouples and aggregates MTKGs into a unified neuro-symbolic evolution hypergraph through neural retrieval and adaptive symbolic decoupling, enabling high-quality representation of temporally evolving multi-modal facts.
+## 📺 Demo Video
+[Official Demo Video1](https://pan.baidu.com/s/12RSVKPTBCdaNXJrI2mLxWA?pwd=64rk)  
+(Baidu Netdisk, 720p, Extraction Code: 64rk) 
 
-**Stage 2: On-Demand Agentic Hypergraph Collaboration** 🚀
+[Official Demo Video2](https://1drv.ms/v/c/50d754725eca3864/Ea89lcdneO1BuMYsdKQRmeEByl39-CGygkiQ9UQiMP-gCg)  
+(OneDrive)
 
-Transforms the hypergraph reasoning problem into a multi-agent collaboration problem modeled as a Markov Decision Process, enabling adaptive coordination to handle varying modality availability across different time points.
+## 🔨  Main Dependencies
 
-#### 3. **Comprehensive Benchmarking** 📊
+* Python>=3.7 (tested on Python=3.8.10)
+* Pytorch
+* Transformers
+* Scipy
+* Pandas
+* Tqdm
+* Numpy
 
-* **Two new benchmark datasets**: WildMTKGA(W-I) and WildMTKGA(Y-I).
-* **27 representative benchmark configurations** for systematic performance evaluation.
-* Extensive experimental validation across diverse scenarios.
 
-📈 Through extensive experimental validation, **EvoWildAlign** establishes new **state-of-the-art performance** in **multi-modal temporal knowledge graph alignment**, offering a practical paradigm for integrating evolving multi-modal knowledge.
 
----
 
-## 🏗 **Architecture** 🏗️
+## 📦 Installation
+It's compatible with python 3.
 
-The core architecture of **EvoWildAlign** adopts a **neuro-symbolic evolutionary agentic hypergraph collaboration framework**, comprising two primary stages:
-
-* **Neuro-Symbolic Evolution Hypergraph Representation** 🕵️‍♂️: Performs adaptive decoupling and aggregation of MTKGs through neural retrieval and symbolic decoupling.
-* **On-Demand Agentic Hypergraph Collaboration** 🚀: Facilitates progressive knowledge integration via multi-agent coordination modeled as a Markov Decision Process.
-* **Full Details**: Refer to Section III of the accompanying paper and the technical report for detailed architecture and pseudocode. 🔍
-
----
-
-## 🔨 **Main Dependencies** 🛠️
-
-* **Python** >= 3.7 (tested on Python 3.8.10) 🐍
-* **PyTorch** >= 1.10.0 🔥
-* **Transformers** >= 4.20.0 🤖
-* **SciPy** >= 1.7.0 📊
-* **Pandas** >= 1.3.0 🐼
-* **Tqdm** >= 4.62.0 ⏳
-* **NumPy** >= 1.21.0 🔢
-* **NetworkX** >= 2.6.0 🌐
-* **Faiss** (for efficient similarity search) 🔍
-
----
-
-## 📦 **Installation** ⚙️
-
-Compatible with **Python 3**. 🚀
-
-1. **Create a Virtual Environment** (optional, but recommended)
-
-   ```shell
-   conda create -n MTKGA-Wild python=3.8.10
-   conda activate MTKGA-Wild
-   ```
-
-2. **Install Dependencies**
-
-   ```shell
-   pip install 'Main Dependencies'
-   ```
-
-3. **Configure LLM API** (required for agentic hypergraph collaboration) 🔑
-
-   Configure your LLM API credentials (e.g., OpenAI, Claude). Example:
-
-   ```env
-   LLM_API_KEY=your_key_here
-   LLM_API_BASE=your_base_here
-   LLM_MODEL=gpt-3.5-turbo-1106
-   ```
-
----
-
-## ✨ Datasets
-
-The datasets are from [Dual-AMN](https://github.com/MaoXinn/Dual-AMN), [JAPE](https://github.com/nju-websoft/JAPE), [GCN-Align](https://github.com/1049451037/GCN-Align), [Simple-HHEA](https://github.com/IDEA-FinAI/Simple-HHEA) and [BETA](https://github.com/DexterZeng/BETA).
-
-Take the dataset icews\_wiki (HHEA) as an example, the folder "data/icews\_wiki" contains:
-
-* ent\_ids\_1: ids for entities in source KG;
-* ent\_ids\_2: ids for entities in target KG;
-* triples\_1: relation triples encoded by ids in source KG;
-* triples\_2: relation triples encoded by ids in target KG;
-* rel\_ids\_1: relation ids in the source KG;
-* rel\_ids\_2: relation ids in the target KG;
-* time\_id: time ids in the source KG and the target KG;
-* ref\_ent\_ids: all aligned entity pairs, list of pairs like (e\_s \t e\_t);
-
-For our newly proposed task, we introduce two novel benchmark datasets: **WildMTKGA(W-I)** 🌐 and **WildMTKGA(Y-I)** 🗺️. Download link: xxx
-
----
-
-## 🔥 **Quick Start** ⚡
-
-Get started with **EvoWildAlign** in minutes! ⏱️
-
-1. **Clone the Repository**
-
-   ```bash
-   git clone https://github.com/eduzrh/MTKGA-Wild.git
-   cd MTKGA-Wild
-   ```
-
-2. **Prepare Datasets**
-
-   ```bash
-   # Download and extract datasets to ./datasets/
-   ```
-
-3. **Run the Main Experiment**
-
-   ```bash
-   python main.py --dataset WildMTKGA(W-I)
-   ```
-
-   This executes the **complete EvoWildAlign pipeline**:
-
-   * Neuro-symbolic evolution hypergraph representation
-   * On-demand agentic hypergraph collaboration
-   * Entity alignment and evaluation
-
-   Progress is monitored via Tqdm progress bars! 📈
-
-4. **View Results**🔍
-
-   * **Performance Metrics**: Console outputs Hits\@1, Hits\@10, and MRR scores.
-   * **Time/Token Consumption**: Automatically calculates average processing time and LLM token usage.
-
----
-
-## 🧑‍💻 **Advanced Usage: Ablation Studies** 🔬
-
-**EvoWildAlign** supports **comprehensive ablation experiments** via flexible component control: 🛠️
-
-### **Ablation Options**
-
-* `--wo-neuro-symbolic`: Removes neuro-symbolic evolution hypergraph representation
-* `--wo-agentic-collaboration`: Omits on-demand agentic hypergraph collaboration
-* `--wo-adaptive-decoupling`: Disables adaptive evolution projection
-* `--wo-core-block-selection`: Removes meta-agent core block selection
-* `--wo-collaboration-decision`: Skips collaboration decision-making
-* `--wo-meta-evaluation`: Disables meta evaluation feedback
-
-**Example**:
-
+1. Create a virtualenv (optional)
+```shell
+conda create -n AdaCoAgentEA python=3.8.10
+conda activate AdaCoAgentEA
+```
+2. Install the dependencies
 ```bash
-# Remove neuro-symbolic evolution hypergraph representation
-python main.py --dataset W-I --wo-neuro-symbolic
-
-# Remove on-demand agentic hypergraph collaboration
-python main.py --dataset Y-I --wo-agentic-collaboration
+pip install 'Main Dependencies'
 ```
 
-**Workflow Overview**:
 
-1. **Data Loading**: Extract relevant entities and multi-modal temporal facts from MTKGs
-2. **Stage 1**: Neuro-symbolic evolution hypergraph representation
+## ✨ Datasets
+The datasets are from [Dual-AMN](https://github.com/MaoXinn/Dual-AMN), [JAPE](https://github.com/nju-websoft/JAPE), [GCN-Align](https://github.com/1049451037/GCN-Align), [Simple-HHEA](https://github.com/IDEA-FinAI/Simple-HHEA) and [BETA](https://github.com/DexterZeng/BETA).
 
-   * Neural retrieval → Adaptive evolution projection → Evolution hypergraph construction
-3. **Stage 2**: On-demand agentic hypergraph collaboration
+Take the dataset icews_wiki (HHEA) as an example, the folder "data/icews_wiki" contains:
+* ent_ids_1: ids for entities in source KG;
+* ent_ids_2: ids for entities in target KG;
+* triples_1: relation triples encoded by ids in source KG;
+* triples_2: relation triples encoded by ids in target KG;
+* rel_ids_1: relation ids in the source KG;
+* rel_ids_2: relation ids in the target KG;
+* time_id: time ids in the source KG and the target KG;
+* ref_ent_ids: all aligned entity pairs, list of pairs like (e_s \t e_t);
 
-   * Core block selection → Collaboration decision-making → Agentic hypergraph execution → Meta evaluation
-4. **Evaluation**: Compute alignment metrics and generate visualizations
 
----
 
-## 📊 **Evaluation Metrics** 📏
+## 🔥 One-Click Launch
 
-We employ standard knowledge graph alignment metrics for **transparency and comparability**: 📐
+1. Clone the repository
+```bash
+git clone https://github.com/eduzrh/AdaCoAgentEA.git
+cd AdaCoAgentEA
+```
 
-* **Hits\@1**: Proportion of correct alignments ranked first
-* **Hits\@10**: Proportion of correct alignments in top-10 candidates
-* **MRR (Mean Reciprocal Rank)**: Average reciprocal rank of correct alignments
-* **Efficiency Metrics**: Average time (seconds/entity), token consumption (tokens/entity)
+2. Run the main experiment (without ablation)
 
----
+The `retriever_document_path` refers to the KG2 which has deleted part of the information of the URL, leaving only the name.
 
-## 🌍 **Contact Information** 📞
+```bash
+python main.py --data DATASET
+```
+`DATASET` can be `icews_wiki`, `icews_yago`, `BETA` or any dataset you place in the directory [data](./data).
 
-📢 For inquiries or feedback, we welcome your contact! 🙌
+Note that the training set in the dataset is not used, i.e., no labelled data is used.
 
-* 📧 **Email**: [runhaozhao@nudt.edu.cn](mailto:runhaozhao@nudt.edu.cn)
-* 📝 **GitHub Issues**: For technical concerns, create an Issue in the [GitHub repository](https://github.com/eduzrh/MTKGA-Wild/issues). Labels: `bug`, `enhancement`, `question`.
 
-Responses targeted within **2-3 business days**. ⏱️
+## 🧪 Ablation Experiments
 
----
+We provide various ablation settings to analyze the contribution of different components in our framework.
 
-## 📜 **License** ⚖️
+### Ablation Categories
 
-[MIT License](LICENSE) - Copyright notices preserved. 🆓
+#### 1️⃣ Ablation 1: Single Small Model-based Agent
 
----
+Tests the combination of LLM Agents with a single small model-based Agent.
+
+| Parameter | Description |
+|-----------|-------------|
+| `S1` | Use only LLM Agents with small model-based Agent 1 |
+| `S2`* | Use only LLM Agents with small model-based Agent 2 |
+| `S3`* | Use only LLM Agents with small model-based Agent 3 |
+| `S4`* | Use only LLM Agents with small model-based Agent 4 |
+
+*Note: Options S2, S3, and S4 will cause the framework to fail because they lack necessary preconditions.
+
+#### 2️⃣ Ablation 2: LLM + Small Model-based Agent Combinations
+
+Tests the combination of a single LLM with a single small model-based Agent.
+
+| Parameter | Description |
+|-----------|-------------|
+| `LLM1_S1` | Use only LLM1 and small model-based Agent 1 |
+| `LLM2_S1` | Use only LLM2 and small model-based Agent 1 |
+| `LLM3_S1` | Use only LLM3 and small model-based Agent 1 |
+| `DomainExperts_S1` | Use only Domain Experts (LLM4) and small model-based Agent 1 |
+| *and other combinations* | See code for complete list |
+
+*Note: Combinations without S1 will cause the framework to fail because they lack necessary preconditions.
+
+#### 3️⃣ Ablation 3: Component Removal Analysis
+
+Evaluates the importance of specific agents by removing them from the framework.
+
+| Parameter | Description |
+|-----------|-------------|
+| `no_LLM1` | Remove LLM1 agent |
+| `no_LLM2` | Remove LLM2 agent |
+| `no_LLM3` | Remove LLM3 agent |
+| `no_DomainExperts` | Remove Domain Expert agents |
+| `no_S1`* | Remove small model-based agent 1 |
+| `no_S2` | Remove small model-based agent 2 |
+| `no_S3` | Remove small model-based agent 3 |
+| `no_S4` | Remove small model-based agent 4 |
+
+*Note: The no_S1 option will cause the framework to fail because small model-based agent 1 is a necessary precondition.
+
+### Example Commands
+
+```bash
+# Run Ablation 1 (using only S1)
+python main.py --data icews_wiki --ablation1 S1
+
+# Run Ablation 2 (using only LLM1 and Stage 1)
+python main.py --data icews_wiki --ablation2 LLM1_S1
+
+# Run Ablation 3 (remove LLM3)
+python main.py --data icews_wiki --ablation3 no_LLM3
+```
+
+### Important Notes
+
+1. Only one ablation category can be run at a time.
+2. Certain configurations will cause the framework to fail as noted above.
+
+### Troubleshooting
+
+If you encounter errors:
+
+- **"Error: Only one ablation category can be selected at a time."**  
+  Solution: Ensure you specify only one ablation experiment category parameter.
+
+- **Data path errors**  
+  Solution: Ensure data is placed in the correct location: `./AdaCoAgent/data/[data_name]`.
+
+
+
+## 🌍  Contact Information
+
+📢 If you have any questions or feedback about this project, please feel free to contact us. We highly appreciate your suggestions!
+
+- 📧 **Email:** runhaozhao@nudt.edu.cn
+- 📝 **GitHub Issues:** For more technical inquiries, you can also create a new issue in our [GitHub repository](https://github.com/eduzrh/AdaCoAgentEA/issues).
+
+We will respond to all questions within 2-3 business days.
+
+## 📜 License
+[GPL-3.0](LICENSE)
 
 ## 🔗 References
+- [Unsupervised Entity Alignment for Temporal Knowledge Graphs](https://doi.org/10.1145/3543507.3583381).  
+  Xiaoze Liu, Junyang Wu, Tianyi Li, Lu Chen, and Yunjun Gao.  
+  Proceedings of the ACM Web Conference (WWW), 2023.  
+- [BERT-INT: A BERT-based Interaction Model for Knowledge Graph Alignment](https://doi.org/10.1145/3543507.3583381).  
+  Xiaobin Tang, Jing Zhang, Bo Chen, Yang Yang, Hong Chen, and Cuiping Li.  
+  Journal of Artificial Intelligence Research, 2020.  
+- [Benchmarking Challenges for Temporal Knowledge Graph Alignment](https://api.semanticscholar.org/CorpusID:273501043).  
+  Weixin Zeng, Jie Zhou, and Xiang Zhao.  
+  Proceedings of the ACM International Conference on Information and Knowledge Management (CIKM), 2024.  
+- [Cross-lingual Knowledge Graph Alignment via Graph Convolutional Networks](https://doi.org/10.18653/v1/d18-1032).  
+  Zhichun Wang, Qingsong Lv, Xiaohan Lan, and Yu Zhang.  
+  Proceedings of the Conference on Empirical Methods in Natural Language Processing (EMNLP), 2018.  
+- [Boosting the Speed of Entity Alignment 10×: Dual Attention Matching Network with Normalized Hard Sample Mining](https://doi.org/10.1145/3442381.3449897).  
+  Xin Mao, Wenting Wang, Yuanbin Wu, and Man Lan.  
+  Proceedings of the Web Conference (WWW), 2021.  
+- [Wikidata: A Free Collaborative Knowledgebase](https://doi.org/10.1145/2629489).  
+  Denny Vrandecic and Markus Krötzsch.  
+  Communications of the ACM, 2014.  
+- [Toward Practical Entity Alignment Method Design: Insights from New Highly Heterogeneous Knowledge Graph Datasets](https://doi.org/10.1145/3589334.3645720).  
+  Xuhui Jiang, Chengjin Xu, Yinghan Shen, Yuanzhuo Wang, Fenglong Su, Zhichao Shi, Fei Sun, Zixuan Li, Jian Guo, and Huawei Shen.  
+  Proceedings of the ACM Web Conference (WWW), 2024.  
+- [Unlocking the Power of Large Language Models for Entity Alignment](https://aclanthology.org/2024.acl-long.408).  
+  Xuhui Jiang, Yinghan Shen, Zhichao Shi, Chengjin Xu, Wei Li, Zixuan Li, Jian Guo, Huawei Shen, and Yuanzhuo Wang.  
+  Proceedings of the Annual Meeting of the Association for Computational Linguistics (ACL), 2024.  
+- [Bootstrapping Entity Alignment with Knowledge Graph Embedding](https://doi.org/10.24963/ijcai.2018/611).  
+  Zequn Sun, Wei Hu, Qingheng Zhang, and Yuzhong Qu.  
+  Proceedings of the International Joint Conference on Artificial Intelligence (IJCAI), 2018.  
+- [NetworkX: Network Analysis in Python](https://github.com/networkx/networkx).  
+  NetworkX Developers.  
+  GitHub Repository.  
+- [Faiss: A Library for Efficient Similarity Search and Clustering of Dense Vectors](https://github.com/facebookresearch/faiss).  
+  Facebook Research.  
+  GitHub Repository.  
 
-* [Unsupervised Entity Alignment for Temporal Knowledge Graphs](https://doi.org/10.1145/3543507.3583381).
-  Xiaoze Liu, Junyang Wu, Tianyi Li, Lu Chen, and Yunjun Gao.
-  Proceedings of the ACM Web Conference (WWW), 2023.
-* [BERT-INT: A BERT-based Interaction Model for Knowledge Graph Alignment](https://doi.org/10.1145/3543507.3583381).
-  Xiaobin Tang, Jing Zhang, Bo Chen, Yang Yang, Hong Chen, and Cuiping Li.
-  Journal of Artificial Intelligence Research, 2020.
-* [Benchmarking Challenges for Temporal Knowledge Graph Alignment](https://api.semanticscholar.org/CorpusID:273501043).
-  Weixin Zeng, Jie Zhou, and Xiang Zhao.
-  Proceedings of the ACM International Conference on Information and Knowledge Management (CIKM), 2024.
-* [Cross-lingual Knowledge Graph Alignment via Graph Convolutional Networks](https://doi.org/10.18653/v1/d18-1032).
-  Zhichun Wang, Qingsong Lv, Xiaohan Lan, and Yu Zhang.
-  Proceedings of the Conference on Empirical Methods in Natural Language Processing (EMNLP), 2018.
-* [Boosting the Speed of Entity Alignment 10×: Dual Attention Matching Network with Normalized Hard Sample Mining](https://doi.org/10.1145/3442381.3449897).
-  Xin Mao, Wenting Wang, Yuanbin Wu, and Man Lan.
-  Proceedings of the Web Conference (WWW), 2021.
-* [Wikidata: A Free Collaborative Knowledgebase](https://doi.org/10.1145/2629489).
-  Denny Vrandecic and Markus Krötzsch.
-  Communications of the ACM, 2014.
-* [Toward Practical Entity Alignment Method Design: Insights from New Highly Heterogeneous Knowledge Graph Datasets](https://doi.org/10.1145/3589334.3645720).
-  Xuhui Jiang, Chengjin Xu, Yinghan Shen, Yuanzhuo Wang, Fenglong Su, Zhichao Shi, Fei Sun, Zixuan Li, Jian Guo, and Huawei Shen.
-  Proceedings of the ACM Web Conference (WWW), 2024.
-* [Unlocking the Power of Large Language Models for Entity Alignment](https://aclanthology.org/2024.acl-long.408).
-  Xuhui Jiang, Yinghan Shen, Zhichao Shi, Chengjin Xu, Wei Li, Zixuan Li, Jian Guo, Huawei Shen, and Yuanzhuo Wang.
-  Proceedings of the Annual Meeting of the Association for Computational Linguistics (ACL), 2024.
-* [Bootstrapping Entity Alignment with Knowledge Graph Embedding](https://doi.org/10.24963/ijcai.2018/611).
-  Zequn Sun, Wei Hu, Qingheng Zhang, and Yuzhong Qu.
-  Proceedings of the International Joint Conference on Artificial Intelligence (IJCAI), 2018.
-* [NetworkX: Network Analysis in Python](https://github.com/networkx/networkx).
-  NetworkX Developers.
-  GitHub Repository.
-* [Faiss: A Library for Efficient Similarity Search and Clustering of Dense Vectors](https://github.com/facebookresearch/faiss).
-  Facebook Research.
-  GitHub Repository.
 
-> **Acknowledgement**  ❤️
-> The following open source projects were partially referenced in this work. We sincerely appreciate their contributions:
-> [Dual-AMN](https://github.com/MaoXinn/Dual-AMN), [JAPE](https://github.com/nju-websoft/JAPE), [GCN-Align](https://github.com/1049451037/GCN-Align), [Simple-HHEA](https://github.com/IDEA-FinAI/Simple-HHEA), [BETA](https://github.com/DexterZeng/BETA), [Dual-Match](https://github.com/ZJU-DAILY/DualMatch/), [Faiss](https://github.com/facebookresearch/faiss), [NetworkX](https://github.com/networkx/networkx), [AdaCoAgentEA](https://github.com/eduzrh/AdaCoAgentEA)
+> **Acknowledgement**  
+> The following open source projects were partially referenced in this work. We sincerely appreciate their contributions:  
+> [Dual-AMN](https://github.com/MaoXinn/Dual-AMN), [JAPE](https://github.com/nju-websoft/JAPE), [GCN-Align](https://github.com/1049451037/GCN-Align), [Simple-HHEA](https://github.com/IDEA-FinAI/Simple-HHEA), [BETA](https://github.com/DexterZeng/BETA), [Dual-Match](https://github.com/ZJU-DAILY/DualMatch/), [Faiss](https://github.com/facebookresearch/faiss), [NetworkX](https://github.com/networkx/networkx)
 
-## **Happy Researching** 🌟
 
-**Stay tuned for updates!** ⭐ **Star this repository** to track our progress. Let's **tame the wild evolution** of multi-modal temporal knowledge graphs together! ⛏️
+---
+
+## Happy Coding 🌞️
